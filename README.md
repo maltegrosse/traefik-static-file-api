@@ -3,7 +3,7 @@
 A simple api wrapper for the [static file traefik configuration](https://doc.traefik.io/traefik/providers/file/), to dynamically add http routes where a wildcard certificate is impossible due to missing dns challenge, but only one target service is needed
 
 ## Run
-Get the latest container from `docker pull traefik-static-file-api`, setup with with following environment variables:
+Get the latest container from `docker pull maltegrosse/traefik-static-file-api:latest`, setup with with following environment variables:
 
 - `API_PORT` default: "8080"
 - `FILENAME` default: "services.yml"
