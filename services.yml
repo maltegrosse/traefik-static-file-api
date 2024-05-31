@@ -1,0 +1,10 @@
+http:
+    routers:
+        grosse:
+            entryPoints:
+                - websecure
+            service: svc@docker
+            rule: Host(`grosse.example.com`)
+            tls:
+                certResolver: le
+
